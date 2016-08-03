@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="wanglizhi" />
+		<meta name="keywords" content="百度" />
+		<meta name="description" content="百度一下，你就知道" />
+		<meta name ="viewport" content ="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>百度一下，你就知道</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/ie.css" />
+		<script type="text/javascript" src="js/html5.js" ></script>
+		<!--[if lte IE 9]> 
+			<link rel="stylesheet" href="css/ie.css" />
+			
+		<![endif]--> 
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- header -->
+		    <header>
+				<div class="pc-menu">
+					<nav>
+						<ul class="mainnav">
+							<li><a href="http://www.nuomi.com/?cid=002540">糯米</a></li>
+							<li><a href="http://news.baidu.com/">新闻</a></li>
+							<li><a href="https://www.hao123.com/">hao123</a></li>
+							<li><a href="http://map.baidu.com/">地图</a></li>
+							<li><a href="http://v.baidu.com/">视频</a></li>
+							<li><a href="http://tieba.baidu.com/">贴吧</a></li>
+							<li><a href="">登录</a></li>
+							<li><a href="">设置</a></li>
+							<li><a href="" id="moreBtn" onmouseover="showSubmenu()">更多产品</a></li>
+						</ul>
+					</nav>
+					<aside>
+						<ul class="submenu" id="submenu" onmouseleave="hideSubmenu()">
+							<li><a href="#" id="more">更多产品</a></li>
+							<li><a href="http://music.baidu.com/"><span class="menu-icon yingyue"></span>音乐</a></li>
+							<li><a href="http://image.baidu.com/"><span class="menu-icon tupian"></span>图片</a></li>
+							<li><a href="http://zhidao.baidu.com/"><span class="menu-icon zhidao"></span>知道</a></li>
+							<li><a href="http://wenku.baidu.com/"><span class="menu-icon wenku"></span>文库</a></li>
+							<li><a href="http://top.baidu.com/"><span class="menu-icon fengyunbang"></span>风云榜</a></li>
+							<li><a href="http://e.baidu.com/?refer=888"><span class="menu-icon tuiguang"></span>百度推广</a></li>
+							<li><a href="https://www.baidu.com/more/">全部产品>></a></li>
+						</ul>
+					</aside>
+				</div>
+				<div class="phone-menu">
+					<div class="weather">
+						23<span class="title">北京空气</span><span class="kongqi">72</span>
+						<a class="user" href="#">+</a>
+					</div>
+					
+				</div>
+		    </header>
+		    
+		    <!-- header end -->
+		    <!-- article -->
+		    <article>
+				<div class="search">
+					<div class="logo-box">
+						<img src="img/bd_logo1.png" class="pc-logo" alt="logo" />
+						<img src="img/plus_logo.png" class="ph-logo" alt="logo" />
+					</div>
+					<div class="from-wrapper">
+						<from>
+							<div class="wrapper">
+								<span class="from-box ipt-bx" id="ipt-bx">
+									<input class="b-ipt" id="b-ipt" type="text" onblur="removeBorderColor()" onfocus="addBorderColor()" />
+									<span class="icon"></span>
+								</span>
+								<span class="from-box btn-bx">
+									<input class="b-btn" type="button" value="百度一下" />
+								</span>
+							</div>
+						</from>
+						<!--手机端导航-->
+						<nav class="phmain-menu">
+							<ul>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>新闻</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>小说</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>视屏</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>糯米</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>地图</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>更多</p>
+								</a></li>
+								
+							</ul>
+						</nav>
+					</div>
+				</div>
+				
+				<div class="ph-conten">
+					<!--模块1-->
+					<div class="item item1">
+						<div class="item-menu">
+							<span class="title">常用网址</span>
+							<span class="btn-bx">
+								
+								<span>|</span>
+							</span>
+						</div>
+						<div class="content">
+							<a href="#">资讯</a>
+							<a href="#">hao123</a>
+							<a href="#">图片</a>
+							<a href="#">爱奇艺</a>
+							<a href="#">美女</a>
+							<a href="#">音乐</a>
+							<a href="#">笑话</a>
+							<a href="#">+</a>
+						</div>
+					</div>
+					<!--模块2-->
+					<div class="item item2">
+						<div class="item-menu">
+							<span class="title">实时热点</span>
+							<span class="btn-bx">
+								<a href="#">
+									<i></i>
+									换一批
+								</a>
+								<span>|</span>
+							</span>
+						</div>
+						<div class="content">
+							<a href="#" class="hot">夫妻生11个孩子</a>
+							<a href="#" class="hot">诺基亚裁员</a>
+							<a href="#" class="hot">村里的露天庭审</a>
+							<a href="#">日寻找失联飞机</a>
+							<a href="#">熊猫繁育进高峰期</a>
+							<a href="#">李亚鹏大赞窦靖童</a>
+						</div>
+					</div>
+					<!--模块3-->
+					<div class="item item3">
+						<div class="item-menu">
+							<span class="title">百度推荐</span>
+							<span class="btn-bx">
+								<a href="#">
+									<i></i>
+									换一批
+								</a>
+								<span>|</span>
+							</span>
+						</div>
+						<div class="content">
+							<a href="#"> 
+								<img src="img/new.jpg" />
+								<div class="new-box">
+									<p>夫妻生11个孩子</p>
+									<p>12:10</p>
+								</div>
+							</a>
+							<a href="#">诺基亚裁员 <span>12:10</span></a>
+							<a href="#">村里的露天庭审 <span>12:10</span></a>
+							<a href="#">日寻找失联飞机 <span>12:10</span></a>
+							<a href="#">熊猫繁育进高峰期 <span>12:10</span></a>
+							<a href="#">李亚鹏大赞窦靖童 <span>12:10</span></a>
+						</div>
+					</div>
+					<!--模块4-->
+					<div class="item item4">
+						<div class="item-menu">
+							<span class="title">百度推荐</span>
+							<span class="btn-bx">
+								<a href="#">
+									<i></i>
+									换一批
+								</a>
+								<span>|</span>
+							</span>
+						</div>
+						<nav class="content">
+							<ul>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>新闻</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>小说</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>视屏</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>糯米</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>地图</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>更多</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>新闻</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>小说</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>视屏</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>糯米</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>地图</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>更多</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>新闻</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>小说</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>视屏</p>
+								</a></li>
+								<li><a href="#">
+									<i class="icon"></i>
+									<p>糯米</p>
+								</a></li>
+							</ul>
+						</nav>
+						<div class="more">
+							<a href="#">展示全部</a>
+						</div>
+					</div>
+					<div class="item itemlast">
+						<a href="#">管理我的卡片</a>
+					</div>
+				</div>
+		    </article>
+		    <!-- article end -->
+		    <!-- footer -->
+		    <footer>
+				<div class="footer-box">
+					<div class="code-box">
+						<div class="code-item">
+							<div class="code-img"></div>
+							<div class="code-text">
+								<p>手机百度</p>
+								<p>快人一步</p>
+							</div>
+						</div>
+						<div class="code-item">
+							<div class="code-img"></div>
+							<div class="code-text">
+								<p>百度糯米</p>
+								<p>一元大餐</p>
+							</div>
+						</div>
+					</div>
+					<div class="conw-box">
+						<p><a href="#">把百度设为主页</a><a href="#">关于百度</a><a href="#">About Baidu</a></p>
+						<p>&copy;2016 Baidu <a href="#">使用百度前必读</a> <a href="#">意见反馈</a> 京ICP证030173号<i class="c-icon-icrlogo"></i></p>
+						<p><i class="c-icon-jgwablogo"></i>京公网安备11000002000001号</p>
+					</div>
+				</div>
+				
+				
+		    </footer>
+		    <!-- footer end -->
+		</div>
+		
+	    <script type="text/javascript" src="js/index.js" ></script>
+	</body>
+</html>
